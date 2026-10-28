@@ -1,0 +1,90 @@
+/* 1. Reset básico para remover margens padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* 2. Centralizando o cartão na tela */
+body {
+    background-color: #eef2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* 3. Estilização do Cartão Central */
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 380px;
+    text-align: center;
+}
+
+h1 {
+    color: #1a2a3a;
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #555555;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+/* 4. Estilo do Campo de Texto e Botões */
+.grupo-input {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+button {
+    padding: 10px 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 5. Divisor do Contador */
+.secao-contador {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+}
+
+.secao-contador button {
+    background-color: #28a745;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.secao-contador button:hover {
+    background-color: #1e7e34;
+}
